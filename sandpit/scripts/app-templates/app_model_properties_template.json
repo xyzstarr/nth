@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "#!property_name!#": {
+      "type": "#!property_type!#",
+      "required": false
+    }
+  }
+}

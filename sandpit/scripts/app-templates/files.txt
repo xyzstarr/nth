@@ -1,0 +1,12 @@
+var templates_dir = "G:\18\work\arc-getting-started\app-templates\"
+
+var xxx_file = "app_model_acls_template.json"
+var xxx_file = "app_model_basic_template.json"
+var xxx_file = "app_model_methods_template.json"
+var xxx_file = "app_model_module_template.js"
+var xxx_file = "app_model_options_template.json"
+var xxx_file = "app_model_properties_template.json"
+var xxx_file = "app_model_relations_template.json"
+var xxx_file = "app_model_validations_template.json"
+//var xxx_file = "z_app_model_proprties_template.json"
+//var xxx_file = "z_app_model_template.json"

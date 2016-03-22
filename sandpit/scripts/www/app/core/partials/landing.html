@@ -1,0 +1,27 @@
+<ion-view name="load-shedding-mains" view-title="Schedules">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <load-shedding-status></load-shedding-status>
+    <ion-content class="content has-subheader">
+        <div>
+            <ion-list>
+                <ion-item href="#/app/provinces">
+                    Browse Areas...
+                </ion-item>
+                <ion-item><div id="div-map-search" class="list"></div></ion-item>
+            </ion-list>
+        </div>
+        <div>
+            <script type="text/ng-template" id="searchbox.tpl.html">
+                <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input onfocus="getGeoCoordinatesFromAddress(this.value);" type="text" placeholder="Search">
+                </label>
+            </script>
+            <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+                <ui-gmap-search-box parentdiv="searchbox.parentdiv" template="searchbox.template" events="searchbox.events"></ui-gmap-search-box>
+            </ui-gmap-google-map></div>
+    </ion-content>
+</ion-view>
+<tabs-menu></tabs-menu>

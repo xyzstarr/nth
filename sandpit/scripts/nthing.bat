@@ -1,0 +1,1 @@
+cmd node D:\work\dev\projects\thewords\server\server.js

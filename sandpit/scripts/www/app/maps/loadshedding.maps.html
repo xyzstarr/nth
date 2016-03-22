@@ -1,0 +1,16 @@
+<ion-view view-title="Provinces">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <load-shedding-status></load-shedding-status>
+    <ion-content has-subheader="true">
+        <ion-list can-swipe="listCanSwipe">
+            <ion-item ng-repeat="province in provinces" href="#/app/municipalities/{{province.province_id}}">
+                {{province.province_name}}
+                <span class="badge badge-calm">{{province.number_of_municipalities}}</span>
+
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
+<tabs-menu></tabs-menu>

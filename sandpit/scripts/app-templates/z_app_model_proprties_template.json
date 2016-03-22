@@ -1,0 +1,23 @@
+{
+  "name": "#!model_name!#",
+  "plural": "thengeses",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "#!property_name!#": {
+      "type": "#!property_type!#",
+      "required": true
+    },
+    "sefane": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

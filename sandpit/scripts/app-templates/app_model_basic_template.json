@@ -1,0 +1,6 @@
+{
+  "name": "#!model_name!#",
+  "plural": "thengeses",
+  "base": "PersistedModel",
+  "idInjection": true
+}

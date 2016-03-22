@@ -1,0 +1,38 @@
+<ion-view view-title="Profile Settings">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <load-shedding-status></load-shedding-status>
+    <ion-content class="content has-subheader">
+        <div class="card">
+            <div style="text-align: center" class="row">
+                <h4 class="title">
+                    Personal
+                </h4>
+            </div>
+            <div class="row"><br/></div>
+            <div class="row row-baseline">
+                <div class="col col-34">Name</div>
+                <div class="col col-66">{{UserProfile.name}}</div>
+            </div>
+            <div class="row">
+                <div class="col col-34">Email</div>
+                <div class="col col-66">{{UserProfile.email}}</div>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="row">
+                <div class="title col col-90">
+                    <h4>My Places</h4>
+                </div>
+                <div class="col col-10"><button ui-sref="app.provinces" class="button button-icon icon ion-android-add-circle pull-right"></button></div>
+            </div>
+            <user-suburbs></user-suburbs>
+        </div>
+    </ion-content>
+</ion-view>
+<tabs-menu></tabs-menu>

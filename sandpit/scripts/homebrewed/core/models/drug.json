@@ -1,0 +1,197 @@
+{
+  "name": "Drug",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "contraindication": {
+      "type": "MedicalContraindication",
+      "comments": "A contraindication for this therapy."
+    },
+    "dosageForm": {
+      "type": "string",
+      "comments": "A dosage form in which this drug/supplement is available, e.g. 'tablet',  'suspension', 'injection'."
+    },
+    "doseSchedule": {
+      "type": "DoseSchedule",
+      "comments": "A dosing schedule for the drug for a given population, either observed,  recommended, or maximum dose based on the type used."
+    },
+    "indication": {
+      "type": "MedicalIndication",
+      "comments": "A factor that indicates use of this therapy for treatment and/or prevention  of a condition, symptom, etc. For therapies such as drugs, indications can  include both officially-approved indications as well as off-label uses.  These can be distinguished by using the ApprovedIndication subtype of  MedicalIndication."
+    },
+    "code": {
+      "type": "MedicalCode",
+      "comments": "A medical code for the entity, taken from a controlled vocabulary or  ontology such as ICD-9, DiseasesDB, MeSH, SNOMED-CT, RxNorm, etc."
+    },
+    "guideline": {
+      "type": "MedicalGuideline",
+      "comments": "A medical guideline related to this entity."
+    },
+    "study": {
+      "type": "MedicalStudy",
+      "comments": "A medical study or trial related to this entity."
+    },
+    "adverseOutcome": {
+      "type": "MedicalEntity",
+      "comments": "A possible complication and/or side effect of this therapy. If it is known  that an adverse outcome is serious (resulting in death, disability, or  permanent damage; requiring hospitalization; or is otherwise  life-threatening or requires immediate medical attention), tag it as a  seriouseAdverseOutcome instead."
+    },
+    "seriousAdverseOutcome": {
+      "type": "MedicalEntity",
+      "comments": "A possible serious complication and/or serious side effect of this therapy.  Serious adverse outcomes include those that are life-threatening; result in  death, disability, or permanent damage; require hospitalization or prolong  existing hospitalization; cause congenital anomalies or birth defects; or  jeopardize the patient and may require medical or surgical intervention to  prevent one of the outcomes in this definition."
+    },
+    "administrationRoute": {
+      "type": "string",
+      "comments": "A route by which this drug may be administered, e.g. 'oral'."
+    },
+    "comments": {
+      "type": "string",
+      "comments": "A short description of the item."
+    },
+    "duplicateTherapy": {
+      "type": "MedicalTherapy",
+      "comments": "A therapy that duplicates or overlaps this one."
+    },
+    "additionalType": {
+      "type": "URL",
+      "comments": "An additional type for the item, typically used for adding more specific  types from external vocabularies in microdata syntax. This is a  relationship between something and a class that the thing is in. In RDFa  syntax, it is better to use the native RDFa syntax - the 'typeof' attribute  - for multiple types. Schema.org tools may have only weaker understanding  of extra types, in particular those defined externally."
+    },
+    "alternateName": {
+      "type": "string",
+      "comments": "An alias for the item."
+    },
+    "availableStrength": {
+      "type": "DrugStrength",
+      "comments": "An available dosage strength for the drug."
+    },
+    "image": {
+      "type": "URL",
+      "comments": "An image of the item. This can be a URL or a fully described ImageObject."
+    },
+    "interactingDrug": {
+      "type": "Drug",
+      "comments": "Another drug that is known to interact with this drug in a way that impacts  the effect of this drug or causes a risk to the patient. Note: disease  interactions are typically captured as contraindications."
+    },
+    "warning": {
+      "type": "Text",
+      "comments": "Any FDA or other warnings about the drug (text or URL)."
+    },
+    "overdosage": {
+      "type": "string",
+      "comments": "Any information related to overdose on a drug, including signs or symptoms,  treatments, contact information for emergency response."
+    },
+    "relatedDrug": {
+      "type": "Drug",
+      "comments": "Any other drug related to this one, for example commonly-prescribed  alternatives."
+    },
+    "alcoholWarning": {
+      "type": "string",
+      "comments": "Any precaution, guidance, contraindication, etc. related to consumption of  alcohol while taking this drug."
+    },
+    "foodWarning": {
+      "type": "string",
+      "comments": "Any precaution, guidance, contraindication, etc. related to consumption of  specific foods while taking this drug."
+    },
+    "breastfeedingWarning": {
+      "type": "string",
+      "comments": "Any precaution, guidance, contraindication, etc. related to this drug's use  by breastfeeding mothers."
+    },
+    "pregnancyWarning": {
+      "type": "string",
+      "comments": "Any precaution, guidance, contraindication, etc. related to this drug's use  during pregnancy."
+    },
+    "cost": {
+      "type": "DrugCost",
+      "comments": "Cost per unit of the drug, as reported by the source being tagged."
+    },
+    "clinicalPharmacology": {
+      "type": "string",
+      "comments": "Description of the absorption and elimination of drugs, including their  concentration (pharmacokinetics, pK) and biological effects  (pharmacodynamics, pD). Supersedes clincalPharmacology."
+    },
+    "relevantSpecialty": {
+      "type": "MedicalSpecialty",
+      "comments": "If applicable, a medical specialty in which this entity is relevant."
+    },
+    "recognizingAuthority": {
+      "type": "Organization",
+      "comments": "If applicable, the organization that officially recognizes this entity as  part of its endorsed system of medicine."
+    },
+    "mainEntityOfPage": {
+      "type": "URL",
+      "comments": "Indicates a page (or other CreativeWork) for which this thing is the main  entity being described.  See background notes for details. Inverse property: mainEntity."
+    },
+    "potentialAction": {
+      "type": "Action",
+      "comments": "Indicates a potential Action, which describes an idealized action in which  this thing would play an 'object' role."
+    },
+    "prescriptionStatus": {
+      "type": "DrugPrescriptionStatus",
+      "comments": "Indicates whether this drug is available by prescription or  over-the-counter."
+    },
+    "prescribingInfo": {
+      "type": "URL",
+      "comments": "Link to prescribing information for the drug."
+    },
+    "labelDetails": {
+      "type": "URL",
+      "comments": "Link to the drug's label details."
+    },
+    "pregnancyCategory": {
+      "type": "DrugPregnancyCategory",
+      "comments": "Pregnancy category of this drug."
+    },
+    "drugClass": {
+      "type": "DrugClass",
+      "comments": "The class of drug this belongs to (e.g., statins)."
+    },
+    "legalStatus": {
+      "type": "DrugLegalStatus",
+      "comments": "The drug or supplement's legal status, including any controlled substance  schedules that apply."
+    },
+    "nonProprietaryName": {
+      "type": "string",
+      "comments": "The generic name of this drug or supplement."
+    },
+    "manufacturer": {
+      "type": "Organization",
+      "comments": "The manufacturer of the product."
+    },
+    "name": {
+      "type": "string",
+      "comments": "The name of the item."
+    },
+    "mechanismOfAction": {
+      "type": "string",
+      "comments": "The specific biochemical interaction through which this drug or supplement  produces its pharmacological effect."
+    },
+    "medicineSystem": {
+      "type": "MedicineSystem",
+      "comments": "The system of medicine that includes this MedicalEntity, for example  'evidence-based', 'homeopathic', 'chiropractic', etc."
+    },
+    "isAvailableGenerically": {
+      "type": "Boolean",
+      "comments": "True if the drug is available in a generic form (regardless of name)."
+    },
+    "isProprietary": {
+      "type": "Boolean",
+      "comments": "True if this item's name is a proprietary/brand name (vs. generic name)."
+    },
+    "sameAs": {
+      "type": "URL",
+      "comments": "URL of a reference Web page that unambiguously indicates the item's  identity. E.g. the URL of the item's Wikipedia page, Freebase page, or  official website."
+    },
+    "url": {
+      "type": "URL",
+      "comments": "URL of the item."
+    },
+    "activeIngredient": {
+      "type": "string",
+      "comments": "An active ingredient, typically chemical compounds and/or biologic  substances."
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

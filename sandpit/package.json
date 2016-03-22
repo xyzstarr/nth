@@ -1,0 +1,10 @@
+{
+  "name": "sandpit",
+  "version": "0.0.0",
+  "description": "sandpit",
+  "main": "app.js",
+  "author": {
+    "name": "Admin",
+    "email": ""
+  }
+}

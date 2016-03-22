@@ -1,0 +1,26 @@
+
+<ion-view view-title="{{municipalities[0].province_name}} Municipalities">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <load-shedding-status></load-shedding-status>
+    <ion-content class="content has-subheader">
+        <div class="card">
+            <app-list-filter></app-list-filter>
+            <ion-list>
+
+                <ion-item class="title">
+                    <h4><b>{{municipalities.length}} munipalities loaded for {{municipalities[0].province_name}}</b></h4>
+                </ion-item>
+                <ion-item class="bar" ng-repeat="municipality in municipalities|filter:AppListFilter" href="#/app/suburbs/{{municipality.municipal_id}}">
+                    {{municipality.municipal_name}}
+                    <ion-option-button class="button-dark icon ion-heart"></ion-option-button>
+                    <ion-option-button class="button-dark icon ion-email"></ion-option-button>
+                    <ion-option-button class="button-assertive icon ion-trash-a"></ion-option-button>
+                    <span class="badge badge-calm">{{municipality.number_of_suburbs}}</span>
+                </ion-item>
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-view>
+<tabs-menu></tabs-menu>

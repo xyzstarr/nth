@@ -1,0 +1,68 @@
+<ion-view name="load-shedding-mains" view-title="Schedules">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <load-shedding-status></load-shedding-status>
+    <ion-content class="content has-subheader">
+        <form  ng-submit="SetAPI(API.Settings)">
+            <div>
+                <div id="loginform" class="card loginform">
+                    <label class="item item-input item-floating-label">
+                        <i class="icon ion-android-mail placeholder-icon input-label-with-floating-item"> API URL</i>
+                        <input type="text" placeholder="Enter API" ng-model="API.Settings.URI">
+                    </label>
+                    <div class="list">
+                        <label class="item item-radio">
+                            <input type="radio" name="group" value="allonia" ng-model="API.Settings.URI">
+                            <div class="item-content">Allonia</div>
+                            <i class="radio-icon ion-checkmark"></i>
+                        </label>
+                        <label class="item item-radio">
+                            <input type="radio" name="group" value="calmcarnage" ng-model="API.Settings.URI">
+                            <div class="item-content">Calm Carnage</div>
+                            <i class="radio-icon ion-checkmark"></i>
+                        </label>
+                        <label class="item item-radio">
+                            <input type="radio" name="group" value="techkc" ng-model="API.Settings.URI">
+                            <div class="item-content">TechKC</div>
+                            <i class="radio-icon ion-checkmark"></i>
+                        </label>
+                        <label class="item item-radio">
+                            <input type="radio" name="group" value="thitos" ng-model="API.Settings.URI">
+                            <div class="item-content">Thitos</div>
+                            <i class="radio-icon ion-checkmark"></i>
+                        </label>
+                        <label class="item item-radio">
+                            <input type="radio" name="group" value="localhost" ng-model="API.Settings.URI">
+                            <div class="item-content">LocalHost</div>
+                            <i class="radio-icon ion-checkmark"></i>
+                        </label>
+                        <input type="text" placeholder="0" ng-model="API.Settings.ErrorAlerts">
+                    </div>
+                    <!--           <i class="icon ion-android-mail placeholder-icon input-label-with-floating-item"> Email Address</i>
+                               <ul class="list">
+                                   <li class="item  item-checkbox"> <label class="checkbox"><input type="checkbox"></label> allonia">Allonia</li>
+                                   <li class="item  item-checkbox"> <label class="checkbox"><input type="checkbox"></label> techkc">TechKC</li>
+                                   <li class="item  item-checkbox"> <label class="checkbox"><input type="checkbox"></label> calmcarnage">CalmCarnage</li>
+                                   <li class="item  item-checkbox"> <label class="checkbox"><input type="checkbox"></label> thitos">Thitos</li>
+                                   <li class="item  item-checkbox"> <label class="checkbox"><input type="checkbox"></label> localhost">LocalHost</li>
+                               </ul>
+
+                    -->
+                </div>
+                <div class="center">
+                    <button ng-click="SetAPI(API.Settings)" class="button button-block button-outline button-dark" type="submit">SET</button>
+                </div>
+                </div>
+        </form>
+        <div class="card">{{API.Settings.FullURI}}</div>
+        <ul class="card list">
+            <li class="item"  ng-repeat="log in logs">
+                {{log}}
+                <i ng-click="RemoveLogItem(log)" class="button button-assertive icon ion-trash-a"></i>
+            </li>
+        </ul>
+        </div>
+    </ion-content>
+</ion-view>
+<tabs-menu></tabs-menu>

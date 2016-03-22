@@ -1,0 +1,21 @@
+
+<ion-view view-title="{{suburbs[0].province_name}} Municipalities">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <load-shedding-status></load-shedding-status>
+    <ion-content class="content has-subheader">
+        <div class="card">
+            <ion-list>
+                <ion-item class="title">
+                    <h4><b>{{suburbs.length}} suburbs loaded for {{suburbs[0].municipal_name}}</b></h4>
+                </ion-item>
+                <ion-item class="bar" ng-repeat="suburb in suburbs" href="#/app/schedules/{{suburb.suburb_id}}">
+                    {{suburb.suburb_name}}
+                    <ion-option-button class="button-balanced icon ion-heart" ng-click="AddNewUserSuburb(suburb.suburb_id)"></ion-option-button>
+                </ion-item>
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-view>
+<tabs-menu></tabs-menu>

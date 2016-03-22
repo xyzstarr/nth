@@ -1,0 +1,45 @@
+<ion-view  view-title="{{schedules[0].suburb_name}} Loadshedding Schedule">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <load-shedding-status></load-shedding-status>
+    <ion-content class="content has-subheader">
+        <ion-refresher
+            pulling-text="Pull to refresh..."
+            on-refresh="doRefresh()">
+        </ion-refresher>
+        <div class="card">
+            <div class="button-bar">
+                <a ng-click="scheduleItemBG = {
+                        'background-color': '#ffc900'
+                    }" class="button button-energized">Stage 1</a>
+                <a ng-click="scheduleItemBG = {
+                        'background-color': '#33cd5f'
+                    }" class="button button-balanced">Stage 2</a>
+                <a ng-click="scheduleItemBG = {
+                        'background-color': '#ef473a'
+                    }" class="button button-assertive">Stage 3</a>
+                <button class="button button-dark">
+                    <i class="icon ion-android-notifications">
+                    </i>
+                </button>
+            </div>
+            <ion-list>
+                <ion-item style="color:#000" ng-style="scheduleItemBG" class="assertive-bg" ng-show="{{schedule.start_time.length>0}}" ng-repeat="schedule in schedules">
+                    <div class="row">
+                        <div class="col">
+                            {{schedule.date}}
+                        </div>
+                        <div class="col">
+                            {{schedule.start_time}}
+                        </div>
+                        <div class="col">
+                            {{schedule.end_time}}
+                        </div>
+                    </div>
+                </ion-item>
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-view>
+<tabs-menu></tabs-menu>

@@ -1,0 +1,45 @@
+<ion-view view-title="Sign Up">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <load-shedding-status></load-shedding-status>
+    <ion-content class="content has-subheader">
+        <div class="info api-result" ng-show="SignUpResults.showResults" ng-click="SignUpResults.showResults=false">
+            <div class="info {{SignUpResults.styleApiStatusInfo}}">{{SignUpResults.message}}</div>
+        </div>
+        <div class="card">
+            <form name="signUpForm">
+                <div class="list">
+                    <label class="item item-input item-floating-label">
+                        <i class="icon ion-android-mail placeholder-icon input-label-with-floating-item"> Username</i>
+                        <input required type="text" placeholder="Username" ng-model="SignUpDetails.name">
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <i class="icon ion-android-mail placeholder-icon input-label-with-floating-item"> Email Address</i>
+                        <input required type="email" placeholder="Email Address" ng-model="SignUpDetails.email">
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <i class="icon ion-android-mail placeholder-icon input-label-with-floating-item"> Password</i>
+                        <input required type="password" placeholder="Password" ng-model="SignUpDetails.password">
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <i class="icon ion-android-mail placeholder-icon input-label-with-floating-item"> Confirm Password</i>
+                        <input required type="password" placeholder="Confirm Password" ng-model="SignUpDetails.confirmPassword">
+                    </label>
+                    <button ng-click="RandomizeData()" class ="clear-fix button button-block button-outline">
+                        <span ng-show="!loading">Random Data</span>
+                    </button>
+                    <button ng-disabled="signUpForm.$invalid" ng-hide="signUpForm.$invalid" ng-click="DoSignUp()" class ="clear-fix button button-block button-outline">
+                        <span ng-show="!loading">Create Account</span>
+                        <i ng-show="loading" class="ion-loading-b"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="card">
+            <div class="titlex" style="text-align: center">Already Signed Up? <a ui-sref="app.signin"> Sign In</a></div>
+            <div class="titlex" style="text-align: center">Forgot Your Sign In Details? <a ui-sref="app.signin"> Come On, Let Me Help You!</a></div>
+        </div>
+    </ion-content>
+</ion-view>
+<tabs-menu></tabs-menu>

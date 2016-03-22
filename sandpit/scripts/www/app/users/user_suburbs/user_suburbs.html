@@ -1,0 +1,8 @@
+<ion-list>
+    <ion-item class="bar" ng-repeat="suburb in suburbs" href="#/app/schedules/{{suburb.suburb_id}}">
+        {{suburb.suburb_name}}
+        <ion-option-button class="button-assertive icon ion-trash-a" ng-click="AddNewUserSuburb(suburb.suburb_id)"></ion-option-button>
+    </ion-item>
+</ion-list>
+
+

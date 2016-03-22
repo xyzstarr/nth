@@ -1,0 +1,63 @@
+/* global address */
+
+/* global LoginCredentials */
+
+<ion-view view-title="Log In">
+    <load-shedding-status></load-shedding-status>
+    <ion-content class="content has-subheader">
+        <form  ng-submit="UserLogin(LoginCredentials)">
+            <div id="loginform" class="card loginform">
+                <label class="item item-input item-floating-label">
+                    <i class="icon ion-android-mail placeholder-icon input-label-with-floating-item"> Email Address</i>
+                    <input type="text" placeholder="Email Address" ng-model="LoginCredentials.email">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <i class="icon ion-android-lock placeholder-icon input-label-with-floating-item"> Password</i>
+                    <input type="password" placeholder="Password" ng-model="LoginCredentials.password">
+                </label>
+
+
+
+                <div class="center">
+                    <button class="button button-block button-outline button-dark" ui-sref="app.signup">Sign Up</button>
+                    <button class="button button-block button-outline button-dark" type="submit">Log In</button>
+                </div>
+            </div>
+        </form>
+
+        <div ng-show="0" class="card">
+            <div class="row">
+                <div class="col col-40">Search</div>
+                <div class="col">
+                    <div id="searchBoxParent"></div>
+                </div>
+            </div>
+        </div>
+        <div ng-show="0" class="card">
+            <div class="row"><div class="col col-40">Street Number</div><div class="col">{{address.details.street_number+' '+address.details.street_name}}</div></div>
+            <div class="row"><div class="col col-40">Suburb</div><div class="col">{{address.details.suburb}}</div></div>
+            <div class="row"><div class="col col-40">Local</div><div class="col">{{address.details.local_municipality}}</div></div>
+            <div class="row"><div class="col col-40">Metro</div><div class="col">{{address.details.administration}}</div></div>
+            <div class="row"><div class="col col-40">Province</div><div class="col">{{address.details.province}}</div></div>
+            <div class="row"><div class="col col-40">Postal Code</div><div class="col">{{address.details.postal_code}}</div></div>
+        </div>
+        <div ng-show="0" class="card">
+            <div class="row"><div class="col col-40">Latitude</div><div class="col">{{address.coords.latitude}}</div></div>
+            <div class="row"><div class="col col-40">Longitude</div><div class="col">{{address.coords.longitude}}</div></div>
+
+        </div>
+        <div ng-show="0" class="card">
+            <div class="row">
+                <div class="col">
+                    <ui-gmap-google-map center='map.center' zoom='map.zoom'  draggable="true" options="options">
+                        <!--                        <ui-gmap-search-box template="searchbox.template" events="searchbox.events">
+
+                                                </ui-gmap-search-box>-->
+                    </ui-gmap-google-map>
+                </div>
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>
+

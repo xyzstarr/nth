@@ -1,0 +1,88 @@
+/* Empty. Add your own CSS if you like */
+
+html {
+    font-family: 'Open Sans';
+    color: rgb(255, 255, 255);
+}
+* {
+    border-radius:0 !important;
+}
+
+body{
+    font-family:inherit !important;
+}
+
+.button {
+    background-color: rgb(68, 68, 68) !important;
+    color: rgb(221, 221, 221) !important;
+    box-shadow: 0 5px 5px rgb(0, 0, 0);
+    border-style: none;
+}
+.bar{
+    height:50px;
+}
+.bar .button.back-button {
+    border-width:0 !important;
+    background-color:inherit  !important;
+    padding-right:5px;
+}
+.center{
+    text-align:center;
+}
+.angular-google-map-container { height: 400px; }
+h1, h2, h3, h4, h5, h6, ion-tabs, .title, .button
+{
+    font-family:inherit !important;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 100;
+    color:inherit;
+}
+.bar.bar-dark-custom {
+    border-color: rgb(17, 17, 17);
+    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(0deg, rgb(17, 17, 17), rgb(17, 17, 17) 50%,transparent 50%);
+    color: rgb(255, 255, 255);
+}
+.pane {
+    /*
+    background: url('../img/battery001.png') ;
+
+    */
+    background-color: rgb(136, 136, 136);
+    background-attachment:fixed;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.item-complex .item-content {
+    border-right-style: solid;
+    border-right-color: rgb(117, 135, 163);
+}
+.app-sub-header{
+    border-color: rgb(68, 68, 68);
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+}
+.input-label-with-floating-item{
+    color: rgb(119, 119, 119) !important;
+    font-size: 12px !important;
+}
+.card {
+    padding-top: 0 !important;
+    padding-bottom: 0;
+    /*box-shadow: 0 5px 5px #555 !important;*/
+    box-shadow: 0 20px 20px rgba(53, 53, 53, 1)!important;
+    background-color: rgb(85, 85, 85);
+}
+
+.row{
+    background-color: rgb(85, 85, 85);
+    color: rgb(255, 255, 255);
+}
+
+#toast-container{
+    width:100% !important;
+
+}
