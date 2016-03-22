@@ -38,6 +38,7 @@
     <Compile Include="common\models\language.js" />
     <Compile Include="common\models\new-modelfff.js" />
     <Compile Include="common\models\thing.js" />
+    <Compile Include="nth.js" />
     <Compile Include="server\boot\anything.js" />
     <Compile Include="server\boot\authentication.js" />
     <Compile Include="server\boot\root.js" />
