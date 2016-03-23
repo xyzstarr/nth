@@ -1,1 +1,73 @@
-{"name":"Thing","properties":{"entity being described.":{"description":null,"type":""},"Inverse property: mainEntity.":{"description":null,"type":""},"See background notes for details.":{"description":null,"type":""},"URL":{"description":null,"type":"Indicates a page (or other CreativeWork) for which this thing is the main"},"mainEntityOfPage":{"description":null,"type":"CreativeWork  or"},"image":{"description":null,"type":"ImageObject  or"},"Properties from Thing":{"description":"","type":""},"description":{"description":"A short description of the item.","type":"string"},"additionalType":{"description":"An additional type for the item, typically used for adding more specific \r\nThing,Thing,types from external vocabularies in microdata syntax. This is a \r\nThing,Thing,relationship between something and a class that the thing is in. In RDFa \r\nThing,Thing,syntax, it is better to use the native RDFa syntax - the 'typeof' attribute \r\nThing,Thing,- for multiple types. Schema.org tools may have only weaker understanding \r\nThing,Thing,of extra types, in particular those defined externally.","type":"URL"},"alternateName":{"description":"An alias for the item.","type":"string"},"potentialAction":{"description":"Indicates a potential Action, which describes an idealized action in which \r\nThing,Thing,this thing would play an 'object' role.","type":"Action"},"name":{"description":"The name of the item.","type":"string"},"sameAs":{"description":"URL of a reference Web page that unambiguously indicates the item's \r\nThing,Thing,identity. E.g. the URL of the item's Wikipedia page, Freebase page, or \r\nThing,Thing,official website.","type":"URL"},"url":{"description":"URL of the item.","type":"URL"}}}
+{
+  "name": "Thing",
+  "properties": {
+    "entity being described.": {
+      "type": {
+        "description": null,
+        "type": ""
+      }
+    },
+    "Inverse property: mainEntity.": {
+      "type": {
+        "description": null,
+        "type": ""
+      }
+    },
+    "See background notes for details.": {
+      "type": {
+        "description": null,
+        "type": ""
+      }
+    },
+    "URL": {
+      "type": "Indicates a page (or other CreativeWork) for which this thing is the main",
+      "description": null
+    },
+    "mainEntityOfPage": {
+      "type": "CreativeWork  or",
+      "description": null
+    },
+    "image": {
+      "type": "ImageObject  or",
+      "description": null
+    },
+    "Properties from Thing": {
+      "type": {
+        "description": "",
+        "type": ""
+      }
+    },
+    "description": {
+      "type": "string",
+      "description": "A short description of the item."
+    },
+    "additionalType": {
+      "type": "URL",
+      "description": "An additional type for the item, typically used for adding more specific \r\nThing,Thing,types from external vocabularies in microdata syntax. This is a \r\nThing,Thing,relationship between something and a class that the thing is in. In RDFa \r\nThing,Thing,syntax, it is better to use the native RDFa syntax - the 'typeof' attribute \r\nThing,Thing,- for multiple types. Schema.org tools may have only weaker understanding \r\nThing,Thing,of extra types, in particular those defined externally."
+    },
+    "alternateName": {
+      "type": "string",
+      "description": "An alias for the item."
+    },
+    "potentialAction": {
+      "type": "Action",
+      "description": "Indicates a potential Action, which describes an idealized action in which \r\nThing,Thing,this thing would play an 'object' role."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the item."
+    },
+    "sameAs": {
+      "type": "URL",
+      "description": "URL of a reference Web page that unambiguously indicates the item's \r\nThing,Thing,identity. E.g. the URL of the item's Wikipedia page, Freebase page, or \r\nThing,Thing,official website."
+    },
+    "url": {
+      "type": "URL",
+      "description": "URL of the item."
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

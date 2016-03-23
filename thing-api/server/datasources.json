@@ -2,5 +2,14 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "mssqlxxx": {
+    "host": "localhost\\mssqlserver2k16",
+    "port": 1433,
+    "database": "test",
+    "password": "webuser",
+    "name": "mssqlxxx",
+    "connector": "mssql",
+    "user": "sa"
   }
 }

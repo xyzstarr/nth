@@ -1,1 +1,69 @@
-{"name":"GeoCoordinates","properties":{"description":{"description":"A short description of the item.","type":"string"},"additionalType":{"description":"An additional type for the item, typically used for adding more specific  types from external vocabularies in microdata syntax. This is a  relationship between something and a class that the thing is in. In RDFa  syntax, it is better to use the native RDFa syntax - the 'typeof' attribute  - for multiple types. Schema.org tools may have only weaker understanding  of extra types, in particular those defined externally.","type":"URL"},"alternateName":{"description":"An alias for the item.","type":"string"},"image":{"description":"An image of the item. This can be a URL or a fully described ImageObject.","type":"URL"},"mainEntityOfPage":{"description":"Indicates a page (or other CreativeWork) for which this thing is the main  entity being described.  See background notes for details. Inverse property: mainEntity.","type":"URL"},"potentialAction":{"description":"Indicates a potential Action, which describes an idealized action in which  this thing would play an 'object' role.","type":"Action"},"address":{"description":"Physical address of the item.","type":"Text"},"addressCountry":{"description":"The country. For example, USA. You can also provide the two-letter ISO  3166-1 alpha-2 country code.","type":"Country"},"elevation":{"description":"The elevation of a location (WGS 84).","type":"Text"},"latitude":{"description":"The latitude of a location. For example 37.42242 (WGS 84).","type":"Text"},"longitude":{"description":"The longitude of a location. For example -122.08585 (WGS 84).","type":"Text"},"name":{"description":"The name of the item.","type":"string"},"postalCode":{"description":"The postal code. For example, 94043.","type":"string"},"sameAs":{"description":"URL of a reference Web page that unambiguously indicates the item's  identity. E.g. the URL of the item's Wikipedia page, Freebase page, or  official website.","type":"URL"},"url":{"description":"URL of the item.","type":"URL"}}}
+{
+  "name": "GeoCoordinates",
+  "properties": {
+    "description": {
+      "type": "string",
+      "description": "A short description of the item."
+    },
+    "additionalType": {
+      "type": "URL",
+      "description": "An additional type for the item, typically used for adding more specific  types from external vocabularies in microdata syntax. This is a  relationship between something and a class that the thing is in. In RDFa  syntax, it is better to use the native RDFa syntax - the 'typeof' attribute  - for multiple types. Schema.org tools may have only weaker understanding  of extra types, in particular those defined externally."
+    },
+    "alternateName": {
+      "type": "string",
+      "description": "An alias for the item."
+    },
+    "image": {
+      "type": "URL",
+      "description": "An image of the item. This can be a URL or a fully described ImageObject."
+    },
+    "mainEntityOfPage": {
+      "type": "URL",
+      "description": "Indicates a page (or other CreativeWork) for which this thing is the main  entity being described.  See background notes for details. Inverse property: mainEntity."
+    },
+    "potentialAction": {
+      "type": "Action",
+      "description": "Indicates a potential Action, which describes an idealized action in which  this thing would play an 'object' role."
+    },
+    "address": {
+      "type": "Text",
+      "description": "Physical address of the item."
+    },
+    "addressCountry": {
+      "type": "Country",
+      "description": "The country. For example, USA. You can also provide the two-letter ISO  3166-1 alpha-2 country code."
+    },
+    "elevation": {
+      "type": "Text",
+      "description": "The elevation of a location (WGS 84)."
+    },
+    "latitude": {
+      "type": "Text",
+      "description": "The latitude of a location. For example 37.42242 (WGS 84)."
+    },
+    "longitude": {
+      "type": "Text",
+      "description": "The longitude of a location. For example -122.08585 (WGS 84)."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the item."
+    },
+    "postalCode": {
+      "type": "string",
+      "description": "The postal code. For example, 94043."
+    },
+    "sameAs": {
+      "type": "URL",
+      "description": "URL of a reference Web page that unambiguously indicates the item's  identity. E.g. the URL of the item's Wikipedia page, Freebase page, or  official website."
+    },
+    "url": {
+      "type": "URL",
+      "description": "URL of the item."
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
