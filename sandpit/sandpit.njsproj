@@ -329,7 +329,9 @@
     <Compile Include="scripts\www\app\core\scripts\config.js" />
     <Compile Include="scripts\www\app\core\scripts\directives.js" />
     <Compile Include="scripts\www\app\core\scripts\load_shedding_status.js" />
-    <Compile Include="scripts\www\app\core\scripts\main.js" />
+    <Compile Include="..\material-start\app\src\nth-core\nth-base-factory.js">
+      <Link>scripts\www\app\core\scripts\nth-base-factory.js</Link>
+    </Compile>
     <Compile Include="scripts\www\app\core\scripts\maps_factory.js" />
     <Compile Include="scripts\www\app\core\scripts\maps_factory_1.js" />
     <Compile Include="scripts\www\app\core\scripts\native_device_toast.js" />
