@@ -1,0 +1,193 @@
+{
+  "name": "TheaterGroup",
+  "properties": {
+    "contactPoint": {
+      "type": "ContactPoint",
+      "description": "A contact point for a person or organization. Supersedes contactPoints."
+    },
+    "member": {
+      "type": "Person",
+      "description": "A member of an Organization or a ProgramMembership. Organizations can be  members of organizations; ProgramMembership is typically for individuals.  Supersedes members, musicGroupMember. Inverse property: memberOf."
+    },
+    "founder": {
+      "type": "Person",
+      "description": "A person who founded this organization. Supersedes founders."
+    },
+    "makesOffer": {
+      "type": "Offer",
+      "description": "A pointer to products or services offered by the organization or person. Inverse property: offeredBy."
+    },
+    "seeks": {
+      "type": "Demand",
+      "description": "A pointer to products or services sought by the organization or person  (demand)."
+    },
+    "department": {
+      "type": "Organization",
+      "description": "A relationship between an organization and a department of that  organization, also described as an organization (allowing different urls,  logos, opening hours). For example: a store with a pharmacy, or a bakery  with a cafe."
+    },
+    "subOrganization": {
+      "type": "Organization",
+      "description": "A relationship between two organizations where the first includes the  second, e.g., as a subsidiary. See also: the more specific 'department'  property. Inverse property: parentOrganization."
+    },
+    "review": {
+      "type": "Review",
+      "description": "A review of the item. Supersedes reviews."
+    },
+    "description": {
+      "type": "string",
+      "description": "A short description of the item."
+    },
+    "alumni": {
+      "type": "Person",
+      "description": "Alumni of an organization. Inverse property: alumniOf."
+    },
+    "additionalType": {
+      "type": "URL",
+      "description": "An additional type for the item, typically used for adding more specific  types from external vocabularies in microdata syntax. This is a  relationship between something and a class that the thing is in. In RDFa  syntax, it is better to use the native RDFa syntax - the 'typeof' attribute  - for multiple types. Schema.org tools may have only weaker understanding  of extra types, in particular those defined externally."
+    },
+    "alternateName": {
+      "type": "string",
+      "description": "An alias for the item."
+    },
+    "logo": {
+      "type": "URL",
+      "description": "An associated logo."
+    },
+    "award": {
+      "type": "string",
+      "description": "An award won by or for this item. Supersedes awards."
+    },
+    "image": {
+      "type": "ImageObject",
+      "description": "An image of the item. This can be a URL or a fully described ImageObject."
+    },
+    "memberOf": {
+      "type": "Organization",
+      "description": "An Organization (or ProgramMembership) to which this Person or Organization  belongs. Inverse property: member."
+    },
+    "email": {
+      "type": "string",
+      "description": "Email address."
+    },
+    "mainEntityOfPage": {
+      "type": "CreativeWork",
+      "description": "Indicates a page (or other CreativeWork) for which this thing is the main  entity being described.  See background notes for details. Inverse property: mainEntity."
+    },
+    "potentialAction": {
+      "type": "Action",
+      "description": "Indicates a potential Action, which describes an idealized action in which  this thing would play an 'object' role."
+    },
+    "hasOfferCatalog": {
+      "type": "OfferCatalog",
+      "description": "Indicates an OfferCatalog listing for this Organization, Person, or Service."
+    },
+    "address": {
+      "type": "Text",
+      "description": "Physical address of the item."
+    },
+    "hasPOS": {
+      "type": "Place",
+      "description": "Points-of-Sales operated by the organization or person."
+    },
+    "owns": {
+      "type": "OwnershipInfo",
+      "description": "Products owned by the organization or person."
+    },
+    "employee": {
+      "type": "Person",
+      "description": "Someone working for this organization. Supersedes employees."
+    },
+    "brand": {
+      "type": "Brand",
+      "description": "The brand(s) associated with a product or service, or the brand(s)  maintained by an organization or business person."
+    },
+    "dissolutionDate": {
+      "type": "Date",
+      "description": "The date that this organization was dissolved."
+    },
+    "foundingDate": {
+      "type": "Date",
+      "description": "The date that this organization was founded."
+    },
+    "duns": {
+      "type": "string",
+      "description": "The Dun & Bradstreet DUNS number for identifying an organization or  business person."
+    },
+    "faxNumber": {
+      "type": "string",
+      "description": "The fax number."
+    },
+    "areaServed": {
+      "type": "AdministrativeArea",
+      "description": "The geographic area where a service or offered item is provided. Supersedes  serviceArea."
+    },
+    "globalLocationNumber": {
+      "type": "string",
+      "description": "The Global Location Number (GLN, sometimes also referred to as  International Location Number or ILN) of the respective organization,  person, or place. The GLN is a 13-digit number used to identify parties and  physical locations."
+    },
+    "isicV4": {
+      "type": "string",
+      "description": "The International Standard of Industrial Classification of All Economic  Activities (ISIC), Revision 4 code for a particular organization, business  person, or place."
+    },
+    "parentOrganization": {
+      "type": "Organization",
+      "description": "The larger organization that this organization is a branch of, if any.  Supersedes branchOf. Inverse property: subOrganization."
+    },
+    "location": {
+      "type": "Place",
+      "description": "The location of for example where the event is happening, an organization  is located, or where an action takes place."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the item."
+    },
+    "naics": {
+      "type": "string",
+      "description": "The North American Industry Classification System (NAICS) code for a  particular organization or business person."
+    },
+    "numberOfEmployees": {
+      "type": "QuantitativeValue",
+      "description": "The number of employees in an organization e.g. business."
+    },
+    "legalName": {
+      "type": "string",
+      "description": "The official name of the organization, e.g. the registered company name."
+    },
+    "aggregateRating": {
+      "type": "AggregateRating",
+      "description": "The overall rating, based on a collection of reviews or ratings, of the  item."
+    },
+    "foundingLocation": {
+      "type": "Place",
+      "description": "The place where the Organization was founded."
+    },
+    "taxID": {
+      "type": "string",
+      "description": "The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US  or the CIF/NIF in Spain."
+    },
+    "telephone": {
+      "type": "string",
+      "description": "The telephone number."
+    },
+    "vatID": {
+      "type": "string",
+      "description": "The Value-added Tax ID of the organization or person."
+    },
+    "event": {
+      "type": "Event",
+      "description": "Upcoming or past event associated with this place, organization, or action.  Supersedes events."
+    },
+    "sameAs": {
+      "type": "URL",
+      "description": "URL of a reference Web page that unambiguously indicates the item's  identity. E.g. the URL of the item's Wikipedia page, Freebase page, or  official website."
+    },
+    "url": {
+      "type": "URL",
+      "description": "URL of the item."
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,49 @@
+{
+  "name": "BusinessFunction",
+  "properties": {
+    "description": {
+      "type": "string",
+      "description": "A short description of the item."
+    },
+    "additionalType": {
+      "type": "string",
+      "description": "An additional type for the item, typically used for adding more specific  types from external vocabularies in microdata syntax. This is a  relationship between something and a class that the thing is in. In RDFa  syntax, it is better to use the native RDFa syntax - the 'typeof' attribute  - for multiple types. Schema.org tools may have only weaker understanding  of extra types, in particular those defined externally."
+    },
+    "alternateName": {
+      "type": "string",
+      "description": "An alias for the item."
+    },
+    "image": {
+      "type": "string",
+      "description": "An image of the item. This can be a URL or a fully described ImageObject."
+    },
+    "mainEntityOfPage": {
+      "type": "string",
+      "description": "Indicates a page (or other CreativeWork) for which this thing is the main  entity being described.  See background notes for details. Inverse property: mainEntity."
+    },
+    "potentialAction": {
+      "type": "string",
+      "description": "Indicates a potential Action, which describes an idealized action in which  this thing would play an 'object' role."
+    },
+    "supersededBy": {
+      "type": "string",
+      "description": "Relates a term (i.e. a property, class or enumeration) to one that  supersedes it."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the item."
+    },
+    "sameAs": {
+      "type": "string",
+      "description": "URL of a reference Web page that unambiguously indicates the item's  identity. E.g. the URL of the item's Wikipedia page, Freebase page, or  official website."
+    },
+    "url": {
+      "type": "string",
+      "description": "URL of the item."
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

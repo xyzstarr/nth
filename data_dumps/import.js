@@ -1,5 +1,5 @@
 //var currObjectType
-var filesDIR = 'D:/work/dev/projects/sunday/'
+var filesDIR = 'D:/work/dev/nth/data_dumps/schema_models/csv/raw/'
 var propertiesFileSuffix = '_properties.csv'
 var destinationTable = 'object_schemas'
 var mainObjectType = ''
@@ -15,7 +15,6 @@ function createCleanCSVFile(csvFile,callback){
 	var lineReader = require('readline').createInterface({
 	  input: require('fs').createReadStream(csvFile)
 	});
-
 	lineReader.on('line', function (line){
 		setMainObjectType(csvFile)
 		if(line.indexOf(propertiesFrom) > 0){
@@ -41,7 +40,6 @@ function createCleanCSVFile(csvFile,callback){
 	  //process.exit(0);
 	});
 }
-
 function getFiles(){
 	require('fs').readdir(filesDIR, function(err, items) {
 		for (var i=0; i<items.length; i++) {
@@ -53,8 +51,6 @@ function getFiles(){
 	});
 	//generateLoopbackModel()
 }
-
-getFiles()
 function importIntoMySQL(csvFile){
 	//todo: check if mysql is running	
 	var fullPathToFile = filesDIR + csvFile
@@ -99,3 +95,4 @@ function mySQLCommandExec(strSQL){
 		
 	connection.end()
 }
+getFiles()

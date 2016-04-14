@@ -1,0 +1,89 @@
+{
+  "name": "MedicalTherapy",
+  "properties": {
+    "contraindication": {
+      "type": "string",
+      "description": "A contraindication for this therapy."
+    },
+    "indication": {
+      "type": "string",
+      "description": "A factor that indicates use of this therapy for treatment and/or prevention  of a condition, symptom, etc. For therapies such as drugs, indications can  include both officially-approved indications as well as off-label uses.  These can be distinguished by using the ApprovedIndication subtype of  MedicalIndication."
+    },
+    "code": {
+      "type": "string",
+      "description": "A medical code for the entity, taken from a controlled vocabulary or  ontology such as ICD-9, DiseasesDB, MeSH, SNOMED-CT, RxNorm, etc."
+    },
+    "guideline": {
+      "type": "string",
+      "description": "A medical guideline related to this entity."
+    },
+    "study": {
+      "type": "string",
+      "description": "A medical study or trial related to this entity."
+    },
+    "adverseOutcome": {
+      "type": "string",
+      "description": "A possible complication and/or side effect of this therapy. If it is known  that an adverse outcome is serious (resulting in death, disability, or  permanent damage; requiring hospitalization; or is otherwise  life-threatening or requires immediate medical attention), tag it as a  seriouseAdverseOutcome instead."
+    },
+    "seriousAdverseOutcome": {
+      "type": "string",
+      "description": "A possible serious complication and/or serious side effect of this therapy.  Serious adverse outcomes include those that are life-threatening; result in  death, disability, or permanent damage; require hospitalization or prolong  existing hospitalization; cause congenital anomalies or birth defects; or  jeopardize the patient and may require medical or surgical intervention to  prevent one of the outcomes in this definition."
+    },
+    "description": {
+      "type": "string",
+      "description": "A short description of the item."
+    },
+    "duplicateTherapy": {
+      "type": "string",
+      "description": "A therapy that duplicates or overlaps this one."
+    },
+    "additionalType": {
+      "type": "string",
+      "description": "An additional type for the item, typically used for adding more specific  types from external vocabularies in microdata syntax. This is a  relationship between something and a class that the thing is in. In RDFa  syntax, it is better to use the native RDFa syntax - the 'typeof' attribute  - for multiple types. Schema.org tools may have only weaker understanding  of extra types, in particular those defined externally."
+    },
+    "alternateName": {
+      "type": "string",
+      "description": "An alias for the item."
+    },
+    "image": {
+      "type": "string",
+      "description": "An image of the item. This can be a URL or a fully described ImageObject."
+    },
+    "relevantSpecialty": {
+      "type": "string",
+      "description": "If applicable, a medical specialty in which this entity is relevant."
+    },
+    "recognizingAuthority": {
+      "type": "string",
+      "description": "If applicable, the organization that officially recognizes this entity as  part of its endorsed system of medicine."
+    },
+    "mainEntityOfPage": {
+      "type": "string",
+      "description": "Indicates a page (or other CreativeWork) for which this thing is the main  entity being described.  See background notes for details. Inverse property: mainEntity."
+    },
+    "potentialAction": {
+      "type": "string",
+      "description": "Indicates a potential Action, which describes an idealized action in which  this thing would play an 'object' role."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the item."
+    },
+    "medicineSystem": {
+      "type": "string",
+      "description": "The system of medicine that includes this MedicalEntity, for example  'evidence-based', 'homeopathic', 'chiropractic', etc."
+    },
+    "sameAs": {
+      "type": "string",
+      "description": "URL of a reference Web page that unambiguously indicates the item's  identity. E.g. the URL of the item's Wikipedia page, Freebase page, or  official website."
+    },
+    "url": {
+      "type": "string",
+      "description": "URL of the item."
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

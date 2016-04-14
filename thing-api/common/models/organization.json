@@ -1,0 +1,89 @@
+{
+  "name": "Organization",
+  "properties": {
+    "contactPoint": {
+      "type": "string",
+      "description": "A contact point for a person or organization. Supersedes contactPoints."
+    },
+    "member": {
+      "type": "string",
+      "description": "A member of an Organization or a ProgramMembership. Organizations can be  members of organizations; ProgramMembership is typically for individuals.  Supersedes members, musicGroupMember. Inverse property: memberOf."
+    },
+    "founder": {
+      "type": "string",
+      "description": "A person who founded this organization. Supersedes founders."
+    },
+    "makesOffer": {
+      "type": "string",
+      "description": "A pointer to products or services offered by the organization or person. Inverse property: offeredBy."
+    },
+    "seeks": {
+      "type": "string",
+      "description": "A pointer to products or services sought by the organization or person  (demand)."
+    },
+    "department": {
+      "type": "string",
+      "description": "A relationship between an organization and a department of that  organization, also described as an organization (allowing different urls,  logos, opening hours). For example: a store with a pharmacy, or a bakery  with a cafe."
+    },
+    "subOrganization": {
+      "type": "string",
+      "description": "A relationship between two organizations where the first includes the  second, e.g., as a subsidiary. See also: the more specific 'department'  property. Inverse property: parentOrganization."
+    },
+    "review": {
+      "type": "string",
+      "description": "A review of the item. Supersedes reviews."
+    },
+    "description": {
+      "type": "string",
+      "description": "A short description of the item."
+    },
+    "alumni": {
+      "type": "string",
+      "description": "Alumni of an organization. Inverse property: alumniOf."
+    },
+    "additionalType": {
+      "type": "string",
+      "description": "An additional type for the item, typically used for adding more specific  types from external vocabularies in microdata syntax. This is a  relationship between something and a class that the thing is in. In RDFa  syntax, it is better to use the native RDFa syntax - the 'typeof' attribute  - for multiple types. Schema.org tools may have only weaker understanding  of extra types, in particular those defined externally."
+    },
+    "alternateName": {
+      "type": "string",
+      "description": "An alias for the item."
+    },
+    "logo": {
+      "type": "string",
+      "description": "An associated logo."
+    },
+    "award": {
+      "type": "string",
+      "description": "An award won by or for this item. Supersedes awards."
+    },
+    "image": {
+      "type": "string",
+      "description": "An image of the item. This can be a URL or a fully described ImageObject."
+    },
+    "memberOf": {
+      "type": "string",
+      "description": "An Organization (or ProgramMembership) to which this Person or Organization  belongs. Inverse property: member."
+    },
+    "email": {
+      "type": "string",
+      "description": "Email address."
+    },
+    "mainEntityOfPage": {
+      "type": "string",
+      "description": "Indicates a page (or other CreativeWork) for which this thing is the main  entity being described.  See background notes for details. Inverse property: mainEntity."
+    },
+    "potentialAction": {
+      "type": "string",
+      "description": "Indicates a potential Action, which describes an idealized action in which  this thing would play an 'object' role."
+    },
+    "hasOfferCatalog": {
+      "type": "string",
+      "description": "Indicates an OfferCatalog listing for this Organization, Person, or Service."
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,117 @@
+{
+  "name": "Vein",
+  "properties": {
+    "code": {
+      "type": "MedicalCode",
+      "description": "A medical code for the entity, taken from a controlled vocabulary or  ontology such as ICD-9, DiseasesDB, MeSH, SNOMED-CT, RxNorm, etc."
+    },
+    "relatedCondition": {
+      "type": "MedicalCondition",
+      "description": "A medical condition associated with this anatomy."
+    },
+    "guideline": {
+      "type": "MedicalGuideline",
+      "description": "A medical guideline related to this entity."
+    },
+    "study": {
+      "type": "MedicalStudy",
+      "description": "A medical study or trial related to this entity."
+    },
+    "relatedTherapy": {
+      "type": "MedicalTherapy",
+      "description": "A medical therapy related to this anatomy."
+    },
+    "description": {
+      "type": "string",
+      "description": "A short description of the item."
+    },
+    "additionalType": {
+      "type": "URL",
+      "description": "An additional type for the item, typically used for adding more specific  types from external vocabularies in microdata syntax. This is a  relationship between something and a class that the thing is in. In RDFa  syntax, it is better to use the native RDFa syntax - the 'typeof' attribute  - for multiple types. Schema.org tools may have only weaker understanding  of extra types, in particular those defined externally."
+    },
+    "alternateName": {
+      "type": "string",
+      "description": "An alias for the item."
+    },
+    "diagram": {
+      "type": "ImageObject",
+      "description": "An image containing a diagram that illustrates the structure and/or its  component substructures and/or connections with other structures."
+    },
+    "image": {
+      "type": "URL",
+      "description": "An image of the item. This can be a URL or a fully described ImageObject."
+    },
+    "subStructure": {
+      "type": "AnatomicalStructure",
+      "description": "Component (sub-)structure(s) that comprise this anatomical structure."
+    },
+    "function": {
+      "type": "string",
+      "description": "Function of the anatomical structure."
+    },
+    "associatedPathophysiology": {
+      "type": "string",
+      "description": "If applicable, a description of the pathophysiology associated with the  anatomical system, including potential abnormal changes in the mechanical,  physical, and biochemical functions of the system."
+    },
+    "relevantSpecialty": {
+      "type": "MedicalSpecialty",
+      "description": "If applicable, a medical specialty in which this entity is relevant."
+    },
+    "recognizingAuthority": {
+      "type": "Organization",
+      "description": "If applicable, the organization that officially recognizes this entity as  part of its endorsed system of medicine."
+    },
+    "mainEntityOfPage": {
+      "type": "URL",
+      "description": "Indicates a page (or other CreativeWork) for which this thing is the main  entity being described.  See background notes for details. Inverse property: mainEntity."
+    },
+    "potentialAction": {
+      "type": "Action",
+      "description": "Indicates a potential Action, which describes an idealized action in which  this thing would play an 'object' role."
+    },
+    "bodyLocation": {
+      "type": "string",
+      "description": "Location in the body of the anatomical structure."
+    },
+    "connectedTo": {
+      "type": "AnatomicalStructure",
+      "description": "Other anatomical structures to which this structure is connected."
+    },
+    "regionDrained": {
+      "type": "AnatomicalSystem",
+      "description": "The anatomical or organ system drained by this vessel; generally refers to  a specific part of an organ."
+    },
+    "tributary": {
+      "type": "AnatomicalStructure",
+      "description": "The anatomical or organ system that the vein flows into; a larger structure  that the vein connects to."
+    },
+    "partOfSystem": {
+      "type": "AnatomicalSystem",
+      "description": "The anatomical or organ system that this structure is part of."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the item."
+    },
+    "medicineSystem": {
+      "type": "MedicineSystem",
+      "description": "The system of medicine that includes this MedicalEntity, for example  'evidence-based', 'homeopathic', 'chiropractic', etc."
+    },
+    "drainsTo": {
+      "type": "Vessel",
+      "description": "The vasculature that the vein drains into."
+    },
+    "sameAs": {
+      "type": "URL",
+      "description": "URL of a reference Web page that unambiguously indicates the item's  identity. E.g. the URL of the item's Wikipedia page, Freebase page, or  official website."
+    },
+    "url": {
+      "type": "URL",
+      "description": "URL of the item."
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

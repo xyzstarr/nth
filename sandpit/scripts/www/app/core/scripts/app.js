@@ -105,6 +105,8 @@
                  * https://blog.nraboy.com/2014/07/handle-user-sign-ionicframework/
                  *
                  */
+                
+                return;/*bypass login*/
                 $ionicHistory.nextViewOptions({
                     disableAnimate:true,
                     disableBack:true

@@ -1,0 +1,89 @@
+{
+  "name": "AnatomicalStructure",
+  "properties": {
+    "code": {
+      "type": "string",
+      "description": "A medical code for the entity, taken from a controlled vocabulary or  ontology such as ICD-9, DiseasesDB, MeSH, SNOMED-CT, RxNorm, etc."
+    },
+    "relatedCondition": {
+      "type": "string",
+      "description": "A medical condition associated with this anatomy."
+    },
+    "guideline": {
+      "type": "string",
+      "description": "A medical guideline related to this entity."
+    },
+    "study": {
+      "type": "string",
+      "description": "A medical study or trial related to this entity."
+    },
+    "relatedTherapy": {
+      "type": "string",
+      "description": "A medical therapy related to this anatomy."
+    },
+    "description": {
+      "type": "string",
+      "description": "A short description of the item."
+    },
+    "additionalType": {
+      "type": "string",
+      "description": "An additional type for the item, typically used for adding more specific  types from external vocabularies in microdata syntax. This is a  relationship between something and a class that the thing is in. In RDFa  syntax, it is better to use the native RDFa syntax - the 'typeof' attribute  - for multiple types. Schema.org tools may have only weaker understanding  of extra types, in particular those defined externally."
+    },
+    "alternateName": {
+      "type": "string",
+      "description": "An alias for the item."
+    },
+    "diagram": {
+      "type": "string",
+      "description": "An image containing a diagram that illustrates the structure and/or its  component substructures and/or connections with other structures."
+    },
+    "image": {
+      "type": "string",
+      "description": "An image of the item. This can be a URL or a fully described ImageObject."
+    },
+    "subStructure": {
+      "type": "string",
+      "description": "Component (sub-)structure(s) that comprise this anatomical structure."
+    },
+    "function": {
+      "type": "string",
+      "description": "Function of the anatomical structure."
+    },
+    "associatedPathophysiology": {
+      "type": "string",
+      "description": "If applicable, a description of the pathophysiology associated with the  anatomical system, including potential abnormal changes in the mechanical,  physical, and biochemical functions of the system."
+    },
+    "relevantSpecialty": {
+      "type": "string",
+      "description": "If applicable, a medical specialty in which this entity is relevant."
+    },
+    "recognizingAuthority": {
+      "type": "string",
+      "description": "If applicable, the organization that officially recognizes this entity as  part of its endorsed system of medicine."
+    },
+    "mainEntityOfPage": {
+      "type": "string",
+      "description": "Indicates a page (or other CreativeWork) for which this thing is the main  entity being described.  See background notes for details. Inverse property: mainEntity."
+    },
+    "potentialAction": {
+      "type": "string",
+      "description": "Indicates a potential Action, which describes an idealized action in which  this thing would play an 'object' role."
+    },
+    "bodyLocation": {
+      "type": "string",
+      "description": "Location in the body of the anatomical structure."
+    },
+    "connectedTo": {
+      "type": "string",
+      "description": "Other anatomical structures to which this structure is connected."
+    },
+    "partOfSystem": {
+      "type": "string",
+      "description": "The anatomical or organ system that this structure is part of."
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

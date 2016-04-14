@@ -1,0 +1,89 @@
+{
+  "name": "AdministrativeArea",
+  "properties": {
+    "photo": {
+      "type": "string",
+      "description": "A photograph of this place. Supersedes photos."
+    },
+    "additionalProperty": {
+      "type": "string",
+      "description": "A property-value pair representing an additional characteristics of the  entitity, e.g. a product feature or another characteristic for which there  is no matching property in schema.org.  Note: Publishers should be aware that applications designed to use specific  schema.org properties (e.g. http://schema.org/width,  http://schema.org/color, http://schema.org/gtin13, ...) will typically  expect such data to be provided using those properties, rather than using  the generic property/value mechanism."
+    },
+    "review": {
+      "type": "string",
+      "description": "A review of the item. Supersedes reviews."
+    },
+    "description": {
+      "type": "string",
+      "description": "A short description of the item."
+    },
+    "branchCode": {
+      "type": "string",
+      "description": "A short textual code (also called \"store code\") that uniquely identifies a  place of business. The code is typically assigned by the parentOrganization  and used in structured URLs.  For example, in the URL  http://www.starbucks.co.uk/store-locator/etc/detail/3047 the code \"3047\" is  a branchCode for a particular branch."
+    },
+    "hasMap": {
+      "type": "string",
+      "description": "A URL to a map of the place. Supersedes map, maps."
+    },
+    "additionalType": {
+      "type": "string",
+      "description": "An additional type for the item, typically used for adding more specific  types from external vocabularies in microdata syntax. This is a  relationship between something and a class that the thing is in. In RDFa  syntax, it is better to use the native RDFa syntax - the 'typeof' attribute  - for multiple types. Schema.org tools may have only weaker understanding  of extra types, in particular those defined externally."
+    },
+    "alternateName": {
+      "type": "string",
+      "description": "An alias for the item."
+    },
+    "logo": {
+      "type": "string",
+      "description": "An associated logo."
+    },
+    "image": {
+      "type": "string",
+      "description": "An image of the item. This can be a URL or a fully described ImageObject."
+    },
+    "mainEntityOfPage": {
+      "type": "string",
+      "description": "Indicates a page (or other CreativeWork) for which this thing is the main  entity being described.  See background notes for details. Inverse property: mainEntity."
+    },
+    "potentialAction": {
+      "type": "string",
+      "description": "Indicates a potential Action, which describes an idealized action in which  this thing would play an 'object' role."
+    },
+    "address": {
+      "type": "string",
+      "description": "Physical address of the item."
+    },
+    "containsPlace": {
+      "type": "string",
+      "description": "The basic containment relation between a place and another that it contains. Inverse property: containsPlace."
+    },
+    "containedInPlace": {
+      "type": "string",
+      "description": "The basic containment relation between a place and one that contains it.  Supersedes containedIn. Inverse property: containsPlace."
+    },
+    "faxNumber": {
+      "type": "string",
+      "description": "The fax number."
+    },
+    "geo": {
+      "type": "string",
+      "description": "The geo coordinates of the place."
+    },
+    "globalLocationNumber": {
+      "type": "string",
+      "description": "The Global Location Number (GLN, sometimes also referred to as  International Location Number or ILN) of the respective organization,  person, or place. The GLN is a 13-digit number used to identify parties and  physical locations."
+    },
+    "isicV4": {
+      "type": "string",
+      "description": "The International Standard of Industrial Classification of All Economic  Activities (ISIC), Revision 4 code for a particular organization, business  person, or place."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the item."
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

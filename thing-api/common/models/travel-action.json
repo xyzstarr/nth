@@ -1,0 +1,101 @@
+{
+  "name": "TravelAction",
+  "properties": {
+    "description": {
+      "type": "string",
+      "description": "A short description of the item."
+    },
+    "toLocation": {
+      "type": "Place",
+      "description": "A sub property of location. The final location of the object or the agent  after the action."
+    },
+    "fromLocation": {
+      "type": "Place",
+      "description": "A sub property of location. The original location of the object or the  agent before the action."
+    },
+    "additionalType": {
+      "type": "URL",
+      "description": "An additional type for the item, typically used for adding more specific  types from external vocabularies in microdata syntax. This is a  relationship between something and a class that the thing is in. In RDFa  syntax, it is better to use the native RDFa syntax - the 'typeof' attribute  - for multiple types. Schema.org tools may have only weaker understanding  of extra types, in particular those defined externally."
+    },
+    "alternateName": {
+      "type": "string",
+      "description": "An alias for the item."
+    },
+    "image": {
+      "type": "ImageObject",
+      "description": "An image of the item. This can be a URL or a fully described ImageObject."
+    },
+    "error": {
+      "type": "Thing",
+      "description": "For failed actions, more information on the cause of the failure."
+    },
+    "mainEntityOfPage": {
+      "type": "URL",
+      "description": "Indicates a page (or other CreativeWork) for which this thing is the main  entity being described.  See background notes for details. Inverse property: mainEntity."
+    },
+    "potentialAction": {
+      "type": "Action",
+      "description": "Indicates a potential Action, which describes an idealized action in which  this thing would play an 'object' role."
+    },
+    "target": {
+      "type": "EntryPoint",
+      "description": "Indicates a target EntryPoint for an Action."
+    },
+    "actionStatus": {
+      "type": "ActionStatusType",
+      "description": "Indicates the current disposition of the Action."
+    },
+    "participant": {
+      "type": "Person",
+      "description": "Other co-agents that participated in the action indirectly. e.g. John wrote  a book with *Steve*."
+    },
+    "agent": {
+      "type": "Person",
+      "description": "The direct performer or driver of the action (animate or inanimate). e.g.  *John* wrote a book."
+    },
+    "distance": {
+      "type": "Distance",
+      "description": "The distance travelled, e.g. exercising or travelling."
+    },
+    "endTime": {
+      "type": "DateTime",
+      "description": "The endTime of something. For a reserved event or service (e.g.  FoodEstablishmentReservation), the time that it is expected to end. For  actions that span a period of time, when the action was performed. e.g.  John wrote a book from January to *December*. Note that Event uses  startDate/endDate instead of startTime/endTime, even when describing dates  with times. This situation may be clarified in future revisions."
+    },
+    "location": {
+      "type": "Place",
+      "description": "The location of for example where the event is happening, an organization  is located, or where an action takes place."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the item."
+    },
+    "instrument": {
+      "type": "Thing",
+      "description": "The object that helped the agent perform the action. e.g. John wrote a book  with *a pen*."
+    },
+    "object": {
+      "type": "Thing",
+      "description": "The object upon the action is carried out, whose state is kept intact or  changed. Also known as the semantic roles patient, affected or undergoer  (which change their state) or theme (which doesn't). e.g. John read *a  book*."
+    },
+    "result": {
+      "type": "Thing",
+      "description": "The result produced in the action. e.g. John wrote *a book*."
+    },
+    "startTime": {
+      "type": "DateTime",
+      "description": "The startTime of something. For a reserved event or service (e.g.  FoodEstablishmentReservation), the time that it is expected to start. For  actions that span a period of time, when the action was performed. e.g.  John wrote a book from *January* to December. Note that Event uses  startDate/endDate instead of startTime/endTime, even when describing dates  with times. This situation may be clarified in future revisions."
+    },
+    "sameAs": {
+      "type": "URL",
+      "description": "URL of a reference Web page that unambiguously indicates the item's  identity. E.g. the URL of the item's Wikipedia page, Freebase page, or  official website."
+    },
+    "url": {
+      "type": "URL",
+      "description": "URL of the item."
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

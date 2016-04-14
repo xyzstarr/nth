@@ -1,0 +1,12 @@
+{
+  "ids": {
+    "ManagerHost": 2,
+    "LoadBalancer": 1
+  },
+  "models": {
+    "ManagerHost": {
+      "3db3152b-af58-4fc9-9852-dd28aaf0ea87": "{\"id\":\"3db3152b-af58-4fc9-9852-dd28aaf0ea87\",\"host\":\"localhost\",\"port\":58116,\"actions\":[\"delete\",\"edit\"],\"protocol\":\"http\",\"created\":1460497273914,\"error\":{\"message\":\"connect ECONNREFUSED 127.0.0.1:58116\"},\"errorType\":\"connection\",\"app\":null,\"processes\":null}"
+    },
+    "LoadBalancer": {}
+  }
+}

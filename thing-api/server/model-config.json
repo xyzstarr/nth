@@ -18,7 +18,7 @@
   },
   "AccessToken": {
     "dataSource": "db",
-    "public": false
+    "public": true
   },
   "ACL": {
     "dataSource": "db",
@@ -31,5 +31,371 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Ticket": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Winery": {
+    "dataSource": "db",
+    "public": true
+  },
+  "UnitPriceSpecification": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TelevisionStation": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TennisComplex": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TheaterGroup": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TireShop": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TouristInformationCenter": {
+    "dataSource": "db",
+    "public": true
+  },
+  "ToyStore": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TravelAgency": {
+    "dataSource": "db",
+    "public": true
+  },
+  "VeterinaryCare": {
+    "dataSource": "db",
+    "public": true
+  },
+  "WholesaleStore": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TaxiStand": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TherapeuticProcedure": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TipAction": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TouristAttraction": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TradeAction": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TrainStation": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TransferAction": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TravelAction": {
+    "dataSource": "db",
+    "public": true
+  },
+  "UpdateAction": {
+    "dataSource": "db",
+    "public": true
+  },
+  "UseAction": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Vein": {
+    "dataSource": "db",
+    "public": true
+  },
+  "ViewAction": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Volcano": {
+    "dataSource": "db",
+    "public": true
+  },
+  "VoteAction": {
+    "dataSource": "db",
+    "public": true
+  },
+  "WatchAction": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Waterfall": {
+    "dataSource": "db",
+    "public": true
+  },
+  "WearAction": {
+    "dataSource": "db",
+    "public": true
+  },
+  "WriteAction": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Zoo": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TaxiReservation": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TelevisionChannel": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Thing": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TieAction": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TrackAction": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TrainReservation": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TrainTrip": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TreatmentIndication": {
+    "dataSource": "db",
+    "public": true
+  },
+  "TypeAndQuantityNode": {
+    "dataSource": "db",
+    "public": true
+  },
+  "UnRegisterAction": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Vessel": {
+    "dataSource": "db",
+    "public": true
+  },
+  "WantAction": {
+    "dataSource": "db",
+    "public": true
+  },
+  "WarrantyPromise": {
+    "dataSource": "db",
+    "public": true
+  },
+  "WarrantyScope": {
+    "dataSource": "db",
+    "public": true
+  },
+  "WinAction": {
+    "dataSource": "db",
+    "public": true
+  },
+  "WPSideBar": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Class": {
+    "dataSource": "db",
+    "public": true
+  },
+  "ActionStatusType": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "AnatomicalStructure": {
+    "dataSource": "db",
+    "public": true
+  },
+  "AnatomicalSystem": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Audience": {
+    "dataSource": "db",
+    "public": true
+  },
+  "BusinessFunction": {
+    "dataSource": "db",
+    "public": true
+  },
+  "DeliveryMethod": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Distance": {
+    "dataSource": "db",
+    "public": true
+  },
+  "EntryPoint": {
+    "dataSource": "db",
+    "public": true
+  },
+  "MedicalCode": {
+    "dataSource": "db",
+    "public": true
+  },
+  "MedicalCondition": {
+    "dataSource": "db",
+    "public": true
+  },
+  "MedicalEntity": {
+    "dataSource": "db",
+    "public": true
+  },
+  "MedicalGuideline": {
+    "dataSource": "db",
+    "public": true
+  },
+  "MedicalIndication": {
+    "dataSource": "db",
+    "public": true
+  },
+  "MedicalProcedureType": {
+    "dataSource": "db",
+    "public": true
+  },
+  "MedicalSpecialty": {
+    "dataSource": "db",
+    "public": true
+  },
+  "MedicalStudy": {
+    "dataSource": "db",
+    "public": true
+  },
+  "MedicalTherapy": {
+    "dataSource": "db",
+    "public": true
+  },
+  "MedicineSystem": {
+    "dataSource": "db",
+    "public": true
+  },
+  "ReservationStatusType": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Action": {
+    "dataSource": "db",
+    "public": true
+  },
+  "AdministrativeArea": {
+    "dataSource": "db",
+    "public": true
+  },
+  "AggregateRating": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Brand": {
+    "dataSource": "db",
+    "public": true
+  },
+  "ContactPoint": {
+    "dataSource": "db",
+    "public": true
+  },
+  "CreativeWork": {
+    "dataSource": "db",
+    "public": true
+  },
+  "GeoCoordinates": {
+    "dataSource": "db",
+    "public": true
+  },
+  "GeoShape": {
+    "dataSource": "db",
+    "public": true
+  },
+  "ImageObject": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Map": {
+    "dataSource": "db",
+    "public": true
+  },
+  "MedicalContraindication": {
+    "dataSource": "db",
+    "public": true
+  },
+  "OfferCatalog": {
+    "dataSource": "db",
+    "public": true
+  },
+  "OpeningHoursSpecification": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Organization": {
+    "dataSource": "db",
+    "public": true
+  },
+  "OwnershipInfo": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Person": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Photograph": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Place": {
+    "dataSource": "db",
+    "public": true
+  },
+  "PriceSpecification": {
+    "dataSource": "db",
+    "public": true
+  },
+  "ProgramMembership": {
+    "dataSource": "db",
+    "public": true
+  },
+  "PropertyValue": {
+    "dataSource": "db",
+    "public": true
+  },
+  "QuantitativeValue": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Review": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Seat": {
+    "dataSource": "db",
+    "public": true
   }
 }

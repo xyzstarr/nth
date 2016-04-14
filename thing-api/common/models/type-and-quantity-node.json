@@ -1,0 +1,65 @@
+{
+  "name": "TypeAndQuantityNode",
+  "properties": {
+    "description": {
+      "type": "string",
+      "description": "A short description of the item."
+    },
+    "unitText": {
+      "type": "string",
+      "description": "A string or text indicating the unit of measurement. Useful if you cannot  provide a standard unit code for unitCode."
+    },
+    "additionalType": {
+      "type": "URL",
+      "description": "An additional type for the item, typically used for adding more specific  types from external vocabularies in microdata syntax. This is a  relationship between something and a class that the thing is in. In RDFa  syntax, it is better to use the native RDFa syntax - the 'typeof' attribute  - for multiple types. Schema.org tools may have only weaker understanding  of extra types, in particular those defined externally."
+    },
+    "alternateName": {
+      "type": "string",
+      "description": "An alias for the item."
+    },
+    "image": {
+      "type": "ImageObject",
+      "description": "An image of the item. This can be a URL or a fully described ImageObject."
+    },
+    "mainEntityOfPage": {
+      "type": "URL",
+      "description": "Indicates a page (or other CreativeWork) for which this thing is the main  entity being described.  See background notes for details. Inverse property: mainEntity."
+    },
+    "potentialAction": {
+      "type": "Action",
+      "description": "Indicates a potential Action, which describes an idealized action in which  this thing would play an 'object' role."
+    },
+    "businessFunction": {
+      "type": "BusinessFunction",
+      "description": "The business function (e.g. sell, lease, repair, dispose) of the offer or  component of a bundle (TypeAndQuantityNode). The default is  http://purl.org/goodrelations/v1#Sell."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the item."
+    },
+    "typeOfGood": {
+      "type": "Product",
+      "description": "The product that this structured value is referring to."
+    },
+    "amountOfThisGood": {
+      "type": "Number",
+      "description": "The quantity of the goods included in the offer."
+    },
+    "unitCode": {
+      "type": "Text",
+      "description": "The unit of measurement given using the UN/CEFACT Common Code (3  characters) or a URL. Other codes than the UN/CEFACT Common Code may be  used with a prefix followed by a colon."
+    },
+    "sameAs": {
+      "type": "URL",
+      "description": "URL of a reference Web page that unambiguously indicates the item's  identity. E.g. the URL of the item's Wikipedia page, Freebase page, or  official website."
+    },
+    "url": {
+      "type": "URL",
+      "description": "URL of the item."
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

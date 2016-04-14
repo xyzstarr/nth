@@ -1,0 +1,89 @@
+{
+  "name": "MedicalStudy",
+  "properties": {
+    "code": {
+      "type": "string",
+      "description": "A medical code for the entity, taken from a controlled vocabulary or  ontology such as ICD-9, DiseasesDB, MeSH, SNOMED-CT, RxNorm, etc."
+    },
+    "guideline": {
+      "type": "string",
+      "description": "A medical guideline related to this entity."
+    },
+    "study": {
+      "type": "string",
+      "description": "A medical study or trial related to this entity."
+    },
+    "description": {
+      "type": "string",
+      "description": "A short description of the item."
+    },
+    "studySubject": {
+      "type": "string",
+      "description": "A subject of the study, i.e. one of the medical conditions, therapies,  devices, drugs, etc. investigated by the study."
+    },
+    "additionalType": {
+      "type": "string",
+      "description": "An additional type for the item, typically used for adding more specific  types from external vocabularies in microdata syntax. This is a  relationship between something and a class that the thing is in. In RDFa  syntax, it is better to use the native RDFa syntax - the 'typeof' attribute  - for multiple types. Schema.org tools may have only weaker understanding  of extra types, in particular those defined externally."
+    },
+    "alternateName": {
+      "type": "string",
+      "description": "An alias for the item."
+    },
+    "image": {
+      "type": "string",
+      "description": "An image of the item. This can be a URL or a fully described ImageObject."
+    },
+    "population": {
+      "type": "string",
+      "description": "Any characteristics of the population used in the study, e.g. 'males under  65'."
+    },
+    "outcome": {
+      "type": "string",
+      "description": "Expected or actual outcomes of the study."
+    },
+    "relevantSpecialty": {
+      "type": "string",
+      "description": "If applicable, a medical specialty in which this entity is relevant."
+    },
+    "recognizingAuthority": {
+      "type": "string",
+      "description": "If applicable, the organization that officially recognizes this entity as  part of its endorsed system of medicine."
+    },
+    "mainEntityOfPage": {
+      "type": "string",
+      "description": "Indicates a page (or other CreativeWork) for which this thing is the main  entity being described.  See background notes for details. Inverse property: mainEntity."
+    },
+    "potentialAction": {
+      "type": "string",
+      "description": "Indicates a potential Action, which describes an idealized action in which  this thing would play an 'object' role."
+    },
+    "sponsor": {
+      "type": "string",
+      "description": "Sponsor of the study."
+    },
+    "studyLocation": {
+      "type": "string",
+      "description": "The location in which the study is taking/took place."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the item."
+    },
+    "status": {
+      "type": "string",
+      "description": "The status of the study (enumerated)."
+    },
+    "medicineSystem": {
+      "type": "string",
+      "description": "The system of medicine that includes this MedicalEntity, for example  'evidence-based', 'homeopathic', 'chiropractic', etc."
+    },
+    "sameAs": {
+      "type": "string",
+      "description": "URL of a reference Web page that unambiguously indicates the item's  identity. E.g. the URL of the item's Wikipedia page, Freebase page, or  official website."
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

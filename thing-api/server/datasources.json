@@ -3,13 +3,13 @@
     "name": "db",
     "connector": "memory"
   },
-  "mssqlxxx": {
-    "host": "localhost\\mssqlserver2k16",
+  "sqlsvr": {
+    "host": "localhost",
     "port": 1433,
-    "database": "test",
-    "password": "webuser",
-    "name": "mssqlxxx",
-    "connector": "mssql",
-    "user": "sa"
+    "database": "schema_db",
+    "password": "schemaapi",
+    "name": "sqlsvr",
+    "user": "schema_api",
+    "connector": "mssql"
   }
 }

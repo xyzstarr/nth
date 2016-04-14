@@ -1,0 +1,89 @@
+{
+  "name": "Photograph",
+  "properties": {
+    "accessibilityHazard": {
+      "type": "string",
+      "description": "A characteristic of the described resource that is physiologically  dangerous to some users. Related to WCAG 2.0 guideline 2.3 (WebSchemas wiki  lists possible values)."
+    },
+    "citation": {
+      "type": "string",
+      "description": "A citation or reference to another creative work, such as another  publication, web page, scholarly article, etc."
+    },
+    "exampleOfWork": {
+      "type": "string",
+      "description": "A creative work that this work is an  example/instance/realization/derivation of. Inverse property: workExample."
+    },
+    "license": {
+      "type": "string",
+      "description": "A license document that applies to this content, typically indicated by URL."
+    },
+    "discussionUrl": {
+      "type": "string",
+      "description": "A link to the page containing the comments of the CreativeWork."
+    },
+    "encoding": {
+      "type": "string",
+      "description": "A media object that encodes this CreativeWork. This property is a synonym  for associatedMedia. Supersedes encodings."
+    },
+    "associatedMedia": {
+      "type": "string",
+      "description": "A media object that encodes this CreativeWork. This property is a synonym  for encoding."
+    },
+    "publication": {
+      "type": "string",
+      "description": "A publication event associated with the item."
+    },
+    "isBasedOnUrl": {
+      "type": "string",
+      "description": "A resource that was used in the creation of this resource. This term can be  repeated for multiple sources. For example,  http://example.com/great-multiplication-intro.html."
+    },
+    "review": {
+      "type": "string",
+      "description": "A review of the item. Supersedes reviews."
+    },
+    "contributor": {
+      "type": "string",
+      "description": "A secondary contributor to the CreativeWork."
+    },
+    "alternativeHeadline": {
+      "type": "string",
+      "description": "A secondary title of the CreativeWork."
+    },
+    "description": {
+      "type": "string",
+      "description": "A short description of the item."
+    },
+    "thumbnailUrl": {
+      "type": "string",
+      "description": "A thumbnail image relevant to the Thing."
+    },
+    "additionalType": {
+      "type": "string",
+      "description": "An additional type for the item, typically used for adding more specific  types from external vocabularies in microdata syntax. This is a  relationship between something and a class that the thing is in. In RDFa  syntax, it is better to use the native RDFa syntax - the 'typeof' attribute  - for multiple types. Schema.org tools may have only weaker understanding  of extra types, in particular those defined externally."
+    },
+    "alternateName": {
+      "type": "string",
+      "description": "An alias for the item."
+    },
+    "educationalAlignment": {
+      "type": "string",
+      "description": "An alignment to an established educational framework."
+    },
+    "award": {
+      "type": "string",
+      "description": "An award won by or for this item. Supersedes awards."
+    },
+    "audio": {
+      "type": "string",
+      "description": "An embedded audio object."
+    },
+    "video": {
+      "type": "string",
+      "description": "An embedded video object."
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

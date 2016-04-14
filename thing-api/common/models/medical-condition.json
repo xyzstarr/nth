@@ -1,0 +1,89 @@
+{
+  "name": "MedicalCondition",
+  "properties": {
+    "code": {
+      "type": "string",
+      "description": "A medical code for the entity, taken from a controlled vocabulary or  ontology such as ICD-9, DiseasesDB, MeSH, SNOMED-CT, RxNorm, etc."
+    },
+    "guideline": {
+      "type": "string",
+      "description": "A medical guideline related to this entity."
+    },
+    "study": {
+      "type": "string",
+      "description": "A medical study or trial related to this entity."
+    },
+    "typicalTest": {
+      "type": "string",
+      "description": "A medical test typically performed given this condition."
+    },
+    "riskFactor": {
+      "type": "string",
+      "description": "A modifiable or non-modifiable factor that increases the risk of a patient  contracting this condition, e.g. age, coexisting condition."
+    },
+    "subtype": {
+      "type": "string",
+      "description": "A more specific type of the condition, where applicable, for example 'Type  1 Diabetes', 'Type 2 Diabetes', or 'Gestational Diabetes' for Diabetes."
+    },
+    "possibleTreatment": {
+      "type": "string",
+      "description": "A possible treatment to address this condition, sign or symptom."
+    },
+    "possibleComplication": {
+      "type": "string",
+      "description": "A possible unexpected and unfavorable evolution of a medical condition.  Complications may include worsening of the signs or symptoms of the  disease, extension of the condition to other organ systems, etc."
+    },
+    "primaryPrevention": {
+      "type": "string",
+      "description": "A preventative therapy used to prevent an initial occurrence of the medical  condition, such as vaccination."
+    },
+    "secondaryPrevention": {
+      "type": "string",
+      "description": "A preventative therapy used to prevent reoccurrence of the medical  condition after an initial episode of the condition."
+    },
+    "description": {
+      "type": "string",
+      "description": "A short description of the item."
+    },
+    "signOrSymptom": {
+      "type": "string",
+      "description": "A sign or symptom of this condition. Signs are objective or physically  observable manifestations of the medical condition while symptoms are the  subjective experience of the medical condition."
+    },
+    "additionalType": {
+      "type": "string",
+      "description": "An additional type for the item, typically used for adding more specific  types from external vocabularies in microdata syntax. This is a  relationship between something and a class that the thing is in. In RDFa  syntax, it is better to use the native RDFa syntax - the 'typeof' attribute  - for multiple types. Schema.org tools may have only weaker understanding  of extra types, in particular those defined externally."
+    },
+    "alternateName": {
+      "type": "string",
+      "description": "An alias for the item."
+    },
+    "image": {
+      "type": "string",
+      "description": "An image of the item. This can be a URL or a fully described ImageObject."
+    },
+    "cause": {
+      "type": "string",
+      "description": "An underlying cause. More specifically, one of the causative agent(s) that  are most directly responsible for the pathophysiologic process that  eventually results in the occurrence."
+    },
+    "pathophysiology": {
+      "type": "string",
+      "description": "Changes in the normal mechanical, physical, and biochemical functions that  are associated with this activity or condition."
+    },
+    "relevantSpecialty": {
+      "type": "string",
+      "description": "If applicable, a medical specialty in which this entity is relevant."
+    },
+    "recognizingAuthority": {
+      "type": "string",
+      "description": "If applicable, the organization that officially recognizes this entity as  part of its endorsed system of medicine."
+    },
+    "mainEntityOfPage": {
+      "type": "string",
+      "description": "Indicates a page (or other CreativeWork) for which this thing is the main  entity being described.  See background notes for details. Inverse property: mainEntity."
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
